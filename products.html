@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collection — Maison Aurore</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="products.css">
+</head>
+<body>
+
+  <!-- Components (Nav + Cart) injected by components.js -->
+
+  <!-- ═══ PAGE HERO ═══ -->
+  <div class="page-hero">
+    <div class="container">
+      <p class="page-hero-label">Maison Aurore</p>
+      <h1 class="page-hero-title">The <em>Collection</em></h1>
+      <p class="page-hero-sub">Each fragrance is a chapter. Discover your signature.</p>
+    </div>
+  </div>
+
+  <!-- ═══ FILTERS + SEARCH ═══ -->
+  <section class="products-section">
+    <div class="container">
+
+      <!-- Filter Bar -->
+      <div class="filter-bar reveal">
+        <div class="filter-search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <input type="text" id="searchInput" placeholder="Search fragrances…" oninput="filterProducts()">
+        </div>
+        <div class="filter-pills" id="filterPills">
+          <button class="pill active" data-filter="all" onclick="setFilter('all', this)">All</button>
+          <button class="pill" data-filter="floral" onclick="setFilter('floral', this)">Floral</button>
+          <button class="pill" data-filter="woody" onclick="setFilter('woody', this)">Woody</button>
+          <button class="pill" data-filter="oriental" onclick="setFilter('oriental', this)">Oriental</button>
+          <button class="pill" data-filter="fresh" onclick="setFilter('fresh', this)">Fresh</button>
+          <button class="pill" data-filter="oud" onclick="setFilter('oud', this)">Oud</button>
+        </div>
+        <div class="filter-sort">
+          <select id="sortSelect" onchange="filterProducts()">
+            <option value="default">Sort: Featured</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="name">Name A–Z</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Results count -->
+      <div class="results-bar reveal">
+        <span id="resultsCount" class="results-count">Showing 8 fragrances</span>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="products-grid" id="productsGrid">
+        <!-- Populated by JS -->
+      </div>
+
+      <!-- No Results -->
+      <div class="no-results" id="noResults" style="display:none;">
+        <p>No fragrances match your search.</p>
+        <button class="btn-ghost" onclick="resetFilters()" style="margin-top:1rem;">Clear Filters</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="components.js"></script>
+  <script src="main.js"></script>
+  <script src="products.js"></script>
+</body>
+</html>

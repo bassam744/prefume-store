@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison Aurore — Paris Perfume House</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+  <!-- Components injected by components.js -->
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="hero">
+    <!-- Background video overlay effect -->
+    <div class="hero-bg">
+      <img
+        src="https://images.unsplash.com/photo-1541643600914-78b084683702?w=1800&q=90"
+        alt="Perfume"
+        class="hero-img"
+      >
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="hero-label reveal">Paris · Est. 1924</span>
+        <h1 class="hero-title reveal" data-delay="100">
+          The Art of<br>
+          <em>Invisible</em><br>
+          Luxury
+        </h1>
+        <p class="hero-desc reveal" data-delay="200">
+          A century of olfactory mastery distilled into each flacon.<br>
+          Wear the world's finest perfumes.
+        </p>
+        <div class="hero-actions reveal" data-delay="300">
+          <a href="products.html" class="btn-gold">
+            <span>Explore Collection</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="about.html" class="btn-ghost">Our Story</a>
+        </div>
+      </div>
+
+      <!-- Floating stats -->
+      <div class="hero-stats reveal" data-delay="400">
+        <div class="stat">
+          <span class="stat-num">100</span>
+          <span class="stat-label">Years of Craft</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">240+</span>
+          <span class="stat-label">Fragrances</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">60</span>
+          <span class="stat-label">Countries</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       MARQUEE STRIP
+  ═══════════════════════════════════════════ -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Eau de Parfum</span>
+      <span class="sep">◆</span>
+      <span>Oud Collection</span>
+      <span class="sep">◆</span>
+      <span>Rose Absolue</span>
+      <span class="sep">◆</span>
+      <span>Oud Nuit</span>
+      <span class="sep">◆</span>
+      <span>Ambre Doré</span>
+      <span class="sep">◆</span>
+      <span>Iris Impérial</span>
+      <span class="sep">◆</span>
+      <span>Vetiver Noir</span>
+      <span class="sep">◆</span>
+      <span>Jasmin Étoile</span>
+      <span class="sep">◆</span>
+      <!-- Duplicate for seamless loop -->
+      <span>Eau de Parfum</span>
+      <span class="sep">◆</span>
+      <span>Oud Collection</span>
+      <span class="sep">◆</span>
+      <span>Rose Absolue</span>
+      <span class="sep">◆</span>
+      <span>Oud Nuit</span>
+      <span class="sep">◆</span>
+      <span>Ambre Doré</span>
+      <span class="sep">◆</span>
+      <span>Iris Impérial</span>
+      <span class="sep">◆</span>
+      <span>Vetiver Noir</span>
+      <span class="sep">◆</span>
+      <span>Jasmin Étoile</span>
+      <span class="sep">◆</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       FEATURED PERFUMES
+  ═══════════════════════════════════════════ -->
+  <section class="featured">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Signature Pieces</span>
+        <h2 class="section-title">The <em>Maison</em> Classics</h2>
+        <div class="gold-divider"></div>
+      </div>
+
+      <div class="featured-grid">
+        <!-- Card 1 -->
+        <div class="featured-card reveal" data-delay="0">
+          <div class="featured-img-wrap">
+            <img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?w=600&q=85" alt="Rose Absolue">
+            <div class="featured-overlay">
+              <a href="products.html" class="btn-ghost" style="font-size:0.65rem;padding:0.6rem 1.4rem;">View All</a>
+            </div>
+          </div>
+          <div class="featured-info">
+            <span class="featured-family">Floral · Oriental</span>
+            <h3>Rose Absolue</h3>
+            <span class="featured-price">$320</span>
+          </div>
+        </div>
+
+        <!-- Card 2 — Wide featured -->
+        <div class="featured-card featured-card--wide reveal" data-delay="100">
+          <div class="featured-img-wrap">
+            <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=900&q=85" alt="Oud Nuit">
+            <div class="featured-overlay">
+              <a href="products.html" class="btn-ghost" style="font-size:0.65rem;padding:0.6rem 1.4rem;">View All</a>
+            </div>
+          </div>
+          <div class="featured-info">
+            <span class="featured-family">Woody · Oud</span>
+            <h3>Oud Nuit <em>Intense</em></h3>
+            <span class="featured-price">$480</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="featured-card reveal" data-delay="200">
+          <div class="featured-img-wrap">
+            <img src="https://images.unsplash.com/photo-1610461888750-10bfc601b4a6?w=600&q=85" alt="Ambre Doré">
+            <div class="featured-overlay">
+              <a href="products.html" class="btn-ghost" style="font-size:0.65rem;padding:0.6rem 1.4rem;">View All</a>
+            </div>
+          </div>
+          <div class="featured-info">
+            <span class="featured-family">Amber · Vanilla</span>
+            <h3>Ambre Doré</h3>
+            <span class="featured-price">$290</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="featured-cta reveal">
+        <a href="products.html" class="btn-gold">
+          <span>Browse Full Collection</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       EDITORIAL SPLIT — Brand Identity
+  ═══════════════════════════════════════════ -->
+  <section class="editorial">
+    <div class="editorial-img reveal-left">
+      <img src="https://images.unsplash.com/photo-1563170351-be82bc888aa4?w=900&q=85" alt="Atelier">
+      <div class="editorial-img-caption">
+        <span>Paris Atelier, 12 Rue du Faubourg</span>
+      </div>
+    </div>
+    <div class="editorial-text reveal-right">
+      <span class="section-label">Our Philosophy</span>
+      <h2 class="section-title">Fragrance as a<br><em>Second Skin</em></h2>
+      <div class="gold-divider"></div>
+      <p>We believe a perfume is not merely a scent — it is memory, emotion, and identity rendered invisible. Since 1924, Maison Aurore has worked with the world's rarest raw materials to create fragrances that become inseparable from those who wear them.</p>
+      <p style="margin-top:1.2rem; color: var(--muted); font-size:0.88rem;">Every bottle is hand-filled and inspected by our master perfumers in Grasse, France — the perfume capital of the world.</p>
+      <a href="about.html" class="btn-gold" style="margin-top:2rem;">
+        <span>Discover Our Story</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PROCESS SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="process">
+    <div class="container">
+      <div class="section-header reveal" style="text-align:center;">
+        <span class="section-label">From Field to Flacon</span>
+        <h2 class="section-title">The Aurore <em>Process</em></h2>
+        <div class="gold-divider" style="margin:1.5rem auto 0;"></div>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step reveal" data-delay="0">
+          <div class="step-num">01</div>
+          <h3>Source</h3>
+          <p>We partner with small-batch growers in Grasse, Bulgaria, and Madagascar to select only the most exceptional botanical harvests.</p>
+        </div>
+        <div class="process-step reveal" data-delay="150">
+          <div class="step-num">02</div>
+          <h3>Compose</h3>
+          <p>Our master perfumers weave together top, heart, and base notes with the precision of a composer writing a symphony.</p>
+        </div>
+        <div class="process-step reveal" data-delay="300">
+          <div class="step-num">03</div>
+          <h3>Macerate</h3>
+          <p>Each fragrance macerates for a minimum of six weeks, allowing the ingredients to meld into a seamless, complex accord.</p>
+        </div>
+        <div class="process-step reveal" data-delay="450">
+          <div class="step-num">04</div>
+          <h3>Bottle</h3>
+          <p>Hand-poured into our iconic crystal flacons, each bottle is individually numbered and sealed with our signature wax emblem.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TESTIMONIAL / QUOTE
+  ═══════════════════════════════════════════ -->
+  <section class="quote-section reveal">
+    <div class="container">
+      <blockquote class="big-quote">
+        <span class="quote-mark">"</span>
+        A perfume is a work of art — it lives, breathes, and reveals itself differently on every skin. Maison Aurore creates what cannot be seen, only felt.
+        <footer class="quote-author">— Jean-Paul Aurore, Founder</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       NEWSLETTER CTA
+  ═══════════════════════════════════════════ -->
+  <section class="newsletter reveal">
+    <div class="container newsletter-inner">
+      <div>
+        <span class="section-label">Exclusive Access</span>
+        <h2 class="section-title">Join the <em>Inner Circle</em></h2>
+        <p class="newsletter-sub">Be the first to discover new creations, private events, and rare editions.</p>
+      </div>
+      <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit" class="btn-gold"><span>Subscribe</span></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="components.js"></script>
+  <script src="main.js"></script>
+  <script>
+    function handleNewsletter(e) {
+      e.preventDefault();
+      showToast('Thank you — welcome to the <span class="toast-gold">Inner Circle</span>');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>

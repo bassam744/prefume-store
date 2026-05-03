@@ -1,0 +1,281 @@
+/* ============================================================
+   MAISON AURORE — About Page Styles
+   ============================================================ */
+
+/* ─── HERO ───────────────────────────────────────────────────── */
+.about-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hero-img {
+  position: absolute;
+  inset: 0;
+}
+
+.about-hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right,
+    rgba(10,10,10,0.9) 0%,
+    rgba(10,10,10,0.6) 100%);
+}
+
+/* ─── INTRO ──────────────────────────────────────────────────── */
+.about-intro {
+  padding: 8rem 0;
+}
+
+.about-intro-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.about-intro-text p {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: rgba(245,240,232,0.72);
+  line-height: 1.9;
+  margin-top: 1rem;
+}
+
+.about-intro-visual {
+  position: relative;
+}
+
+.about-intro-visual img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+}
+
+.about-intro-accent {
+  position: absolute;
+  bottom: -1.5rem;
+  left: -1.5rem;
+  background: var(--gold);
+  color: var(--obsidian);
+  padding: 1.8rem 2rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.8rem;
+}
+
+.accent-num {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.accent-text {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+/* ─── VALUES ─────────────────────────────────────────────────── */
+.values {
+  padding: 8rem 0;
+  background: var(--deep);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.value-card {
+  padding: 2.5rem 2rem;
+  border: 1px solid rgba(201,168,76,0.1);
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.value-card:hover {
+  border-color: rgba(201,168,76,0.35);
+  background: rgba(201,168,76,0.03);
+}
+
+.value-icon {
+  width: 52px;
+  height: 52px;
+  border: 1px solid rgba(201,168,76,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: var(--gold);
+}
+
+.value-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--ivory);
+  margin-bottom: 0.8rem;
+}
+
+.value-card p {
+  font-size: 0.84rem;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+/* ─── MISSION / VISION ───────────────────────────────────────── */
+.mission-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 60vh;
+}
+
+.mission-panel {
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+}
+
+.mv-inner {
+  padding: 5rem;
+}
+
+.mv-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--ivory);
+  margin-bottom: 1.5rem;
+}
+
+.mv-title em { font-style: italic; color: var(--gold-light); }
+
+.mission-panel .mv-inner p {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: rgba(245,240,232,0.7);
+  line-height: 1.9;
+}
+
+.vision-panel {
+  position: relative;
+  overflow: hidden;
+}
+
+.mv-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vision-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10,10,10,0.75);
+  display: flex;
+  align-items: center;
+}
+
+/* ─── TEAM ───────────────────────────────────────────────────── */
+.team {
+  padding: 8rem 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.team-card {
+  background: var(--deep);
+  border: 1px solid rgba(255,255,255,0.05);
+  overflow: hidden;
+  transition: border-color var(--transition);
+}
+
+.team-card:hover { border-color: rgba(201,168,76,0.25); }
+
+.team-img {
+  aspect-ratio: 3/4;
+  overflow: hidden;
+}
+
+.team-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.8s ease;
+}
+
+.team-card:hover .team-img img { transform: scale(1.05); }
+
+.team-info {
+  padding: 1.5rem;
+}
+
+.team-info h3 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--ivory);
+  margin-bottom: 0.3rem;
+}
+
+.team-role {
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.team-info p {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* ─── CTA ────────────────────────────────────────────────────── */
+.about-cta {
+  padding: 7rem 0;
+  text-align: center;
+  background: var(--deep);
+  border-top: 1px solid rgba(201,168,76,0.1);
+}
+
+/* ─── RESPONSIVE ─────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .values-grid { grid-template-columns: repeat(2, 1fr); }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .mv-inner { padding: 3rem; }
+}
+
+@media (max-width: 768px) {
+  .about-intro-inner { grid-template-columns: 1fr; gap: 3rem; }
+  .about-intro-accent { bottom: -1rem; left: -0.5rem; }
+
+  .values-grid { grid-template-columns: 1fr; }
+
+  .mission-vision { grid-template-columns: 1fr; }
+  .vision-panel { min-height: 400px; }
+  .mv-inner { padding: 3rem 2rem; }
+
+  .team-grid { grid-template-columns: 1fr; }
+}
