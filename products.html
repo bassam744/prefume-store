@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Collection — Maison Aurore</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="products.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/products.css">
 </head>
+
 <body>
 
   <!-- Components (Nav + Cart) injected by components.js -->
@@ -27,7 +29,10 @@
       <!-- Filter Bar -->
       <div class="filter-bar reveal">
         <div class="filter-search">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.35-4.35" />
+          </svg>
           <input type="text" id="searchInput" placeholder="Search fragrances…" oninput="filterProducts()">
         </div>
         <div class="filter-pills" id="filterPills">
@@ -68,8 +73,9 @@
   </section>
 
   <!-- Scripts -->
-  <script src="components.js"></script>
-  <script src="main.js"></script>
-  <script src="products.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
 </body>
+
 </html>
